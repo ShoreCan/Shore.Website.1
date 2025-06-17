@@ -802,7 +802,7 @@ a:hover {
 
     /* City Series: three-column grid for even larger screens */
     .city-cards-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .city-image-wrapper {
         height: 350px;
