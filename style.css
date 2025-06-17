@@ -343,6 +343,19 @@ a:hover {
     transform: scale(1.02);
 }
 
+/* === ADDED THESE STYLES FOR THE VIDEO === */
+.intro-new .intro-image video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.intro-new .intro-image video:hover {
+    transform: scale(1.02);
+}
+
 
 /* About page sections */
 .about-sections-grid {
@@ -810,7 +823,7 @@ a:hover {
 @media (min-width: 1024px) {
     /* Hero */
     .hero-new {
-        height: 90vh; /* Even taller hero on large screens */
+        height: 90vh; /* Even taller on large screens */
     }
     .hero-content-new h1 {
         font-size: 5rem;
