@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Series – Shore.™</title>
+    <title data-i18n="page_title_city">City Series – Shore.™</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/city.html" hreflang="en" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/city.html?lang=es" hreflang="es" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/city.html?lang=de" hreflang="de" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/city.html?lang=fr" hreflang="fr" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/city.html?lang=it" hreflang="it" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/city.html?lang=zh" hreflang="zh" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/city.html?lang=ar" hreflang="ar" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/city.html" hreflang="x-default" />
 </head>
 <body>
 
@@ -14,30 +22,41 @@
         <nav class="main-nav">
             <a href="index.html" class="logo"><img src="Logo3.png" alt="Shore.™ logo"></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="city.html">City Series</a></li>
-                <li><a href="community.html">Community</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="city.html" data-i18n="nav_city_series">City Series</a></li>
+                <li><a href="community.html" data-i18n="nav_community">Community</a></li>
             </ul>
             <div class="hamburger-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            <div class="language-switcher">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="zh">中文 (Chinese)</option>
+                    <option value="ar">العربية (Arabic)</option>
+                </select>
+            </div>
         </nav>
     </header>
 
     <main class="page-main">
-        <h1 class="page-title animate-fade-in-up">City Series</h1>
-        <p class="page-description animate-fade-in delay-1">The Shore.™ City Series celebrates the unique coastal vibes of iconic cities. Each limited-edition can drop features artwork inspired by a different shoreline and culture, bringing a local twist to our signature drink. Put your city on the map!</p>
+        <h1 class="page-title animate-fade-in-up" data-i18n="city_main_title">City Series</h1>
+        <p class="page-description animate-fade-in delay-1" data-i18n="city_description">The Shore.™ City Series celebrates the unique coastal vibes of iconic cities. Each limited-edition can drop features artwork inspired by a different shoreline and culture, bringing a local twist to our signature drink. Put your city on the map!</p>
         <div class="city-cards-grid">
             <div class="city-card-new reveal-on-scroll">
                 <div class="city-image-wrapper">
                     <img src="BeachCanModel.png" alt="Shore.™ Chicago Edition Can">
                 </div>
                 <div class="city-content">
-                    <h2>Chicago</h2>
-                    <p><strong>The North Avenue Beach Edition.</strong> Our launch can features Chicago's beloved lakeside skyline and beach. It's a tribute to summers on Lake Michigan and the city where Shore.™ was born.</p>
+                    <h2 data-i18n="city_chicago_title">Chicago</h2>
+                    <p data-i18n="city_chicago_content"><strong>The North Avenue Beach Edition.</strong> Our launch can features Chicago's beloved lakeside skyline and beach. It's a tribute to summers on Lake Michigan and the city where Shore.™ was born.</p>
                 </div>
             </div>
             <div class="city-card-new reveal-on-scroll delay-1">
@@ -45,8 +64,8 @@
                     <img src="Miami_Shoreline.png" alt="Shore.™ Miami Edition Can">
                 </div>
                 <div class="city-content">
-                    <h2>Miami</h2>
-                    <p><strong>The South Beach Edition.</strong> A vibrant design channeling Miami's colorful art deco and sunny shorelines. (<strong>Coming soon</strong> – stay tuned for this tropical twist on Shore.™)</p>
+                    <h2 data-i18n="city_miami_title">Miami</h2>
+                    <p data-i18n="city_miami_content"><strong>The South Beach Edition.</strong> A vibrant design channeling Miami's colorful art deco and sunny shorelines. (<strong data-i18n="coming_soon">Coming soon</strong> – stay tuned for this tropical twist on Shore.™)</p>
                 </div>
             </div>
             <div class="city-card-new reveal-on-scroll delay-2">
@@ -54,8 +73,8 @@
                     <img src="LosAngeles_Shorline_1.png" alt="Shore.™ Los Angeles Edition Can">
                 </div>
                 <div class="city-content">
-                    <h2>Los Angeles</h2>
-                    <p><strong>The Malibu Edition.</strong> Inspired by LA's iconic beaches and sunsets, this can will bring West Coast chill to your hand. (<strong>Coming soon</strong> – catch the wave when it drops!)</p>
+                    <h2 data-i18n="city_la_title">Los Angeles</h2>
+                    <p data-i18n="city_la_content"><strong>The Malibu Edition.</strong> Inspired by LA's iconic beaches and sunsets, this can will bring West Coast chill to your hand. (<strong data-i18n="coming_soon">Coming soon</strong> – catch the wave when it drops!)</p>
                 </div>
             </div>
             <div class="city-card-new reveal-on-scroll delay-3">
@@ -63,8 +82,8 @@
                     <img src="Seattle_Shoreline.png" alt="Shore.™ Seattle Edition Can">
                 </div>
                 <div class="city-content">
-                    <h2>Seattle</h2>
-                    <p><strong>The Puget Sound Edition.</strong> Featuring the misty blues and greens of the Pacific Northwest, our Seattle can honors the city's waterfront life. (<strong>Coming soon</strong> – pour one for the Sound!)</p>
+                    <h2 data-i18n="city_seattle_title">Seattle</h2>
+                    <p data-i18n="city_seattle_content"><strong>The Puget Sound Edition.</strong> Featuring the misty blues and greens of the Pacific Northwest, our Seattle can honors the city's waterfront life. (<strong data-i18n="coming_soon">Coming soon</strong> – pour one for the Sound!)</p>
                 </div>
             </div>
         </div>
@@ -73,11 +92,11 @@
 <footer class="site-footer">
     <div class="footer-content-new">
             <div class="footer-col contact-info">
-                <p>Contact: <a href="mailto:shore.cans@gmail.com">shore.cans@gmail.com</a></p>
-                <p><a href="#">Press Kit</a> (coming soon)</p>
+                <p data-i18n="footer_contact">Contact: <a href="mailto:shore.cans@gmail.com">shore.cans@gmail.com</a></p>
+                <p><a href="#" data-i18n="footer_press_kit">Press Kit</a> (coming soon)</p>
             </div>
         <div class="footer-col social-links">
-            <p>Connect with Us:</p>
+            <p data-i18n="footer_connect">Connect with Us:</p>
             <div class="social-icons">
                 <a href="https://www.instagram.com/shore_can/" aria-label="Instagram"><img src="Instagram_Logo.png" alt="Instagram"></a>
                 <a href="https://www.tiktok.com/@shore_can?_t=ZT-8xIIsoB42kH&_r=1" aria-label="TikTok"><img src="TikTok_Logo.png" alt="TikTok"></a>
@@ -85,18 +104,52 @@
             </div>
         </div>
         <div class="footer-col footer-nav">
-            <p>Quick Links:</p>
+            <p data-i18n="footer_quick_links">Quick Links:</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="city.html">City Series</a></li>
-                <li><a href="community.html">Community</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="city.html" data-i18n="nav_city_series">City Series</a></li>
+                <li><a href="community.html" data-i18n="nav_community">Community</a></li>
             </ul>
         </div>
     </div>
-    <p class="copyright">© 2025 Shore.™ All rights reserved.</p>
+    <p class="copyright" data-i18n="footer_copyright">© 2025 Shore.™ All rights reserved.</p>
 </footer>
 
     <script src="script.js"></script>
-</body>
+
+    <div id="ageGate" class="age-gate-overlay">
+        <div class="age-gate-content">
+            <img src="Logo3.png" alt="Shore.™ Logo" class="age-gate-logo">
+            <h2 data-i18n="agegate_title">Are you 21 or older?</h2>
+            <p data-i18n="agegate_prompt">Please enter your date of birth to continue:</p>
+            <form id="ageGateForm" class="age-gate-form">
+                <div class="dob-inputs">
+                    <select id="dobMonth" required>
+                        <option value="" data-i18n="agegate_month_placeholder">Month</option>
+                        <option value="1" data-i18n="month_jan">January</option>
+                        <option value="2" data-i18n="month_feb">February</option>
+                        <option value="3" data-i18n="month_mar">March</option>
+                        <option value="4" data-i18n="month_apr">April</option>
+                        <option value="5" data-i18n="month_may">May</option>
+                        <option value="6" data-i18n="month_jun">June</option>
+                        <option value="7" data-i18n="month_jul">July</option>
+                        <option value="8" data-i18n="month_aug">August</option>
+                        <option value="9" data-i18n="month_sep">September</option>
+                        <option value="10" data-i18n="month_oct">October</option>
+                        <option value="11" data-i18n="month_nov">November</option>
+                        <option value="12" data-i18n="month_dec">December</option>
+                    </select>
+                    <input type="number" id="dobDay" placeholder="Day" data-i18n-placeholder="agegate_day_placeholder" min="1" max="31" required>
+                    <input type="number" id="dobYear" placeholder="Year" data-i18n-placeholder="agegate_year_placeholder" min="1900" max="2024" required>
+                </div>
+                <p id="ageGateMessage" class="age-gate-message"></p>
+                <button type="submit" class="button primary-button age-gate-submit-btn" data-i18n="agegate_enter_button">Enter</button>
+            </form>
+            <p class="underage-link">
+                <a href="https://www.google.com" target="_blank" data-i18n="agegate_underage_link">I am not 21 or older</a>
+            </p>
+        </div>
+    </div>
+    </body>
 </html>
