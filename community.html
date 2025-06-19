@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community – Shore.™</title>
+    <title data-i18n="page_title_community">Community – Shore.™</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/community.html" hreflang="en" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/community.html?lang=es" hreflang="es" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/community.html?lang=de" hreflang="de" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/community.html?lang=fr" hreflang="fr" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/community.html?lang=it" hreflang="it" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/community.html?lang=zh" hreflang="zh" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/community.html?lang=ar" hreflang="ar" />
+    <link rel="alternate" href="https://shorecan.github.io/Shore.Website.1/community.html" hreflang="x-default" />
 </head>
 <body>
 
@@ -14,108 +22,120 @@
         <nav class="main-nav">
             <a href="index.html" class="logo"><img src="Logo3.png" alt="Shore.™ logo"></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="city.html">City Series</a></li>
-                <li><a href="community.html">Community</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="city.html" data-i18n="nav_city_series">City Series</a></li>
+                <li><a href="community.html" data-i18n="nav_community">Community</a></li>
             </ul>
             <div class="hamburger-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            <div class="language-switcher">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="zh">中文 (Chinese)</option>
+                    <option value="ar">العربية (Arabic)</option>
+                </select>
+            </div>
         </nav>
     </header>
 
     <main class="page-main">
-        <h1 class="page-title animate-fade-in-up">Community & Culture</h1>
+        <h1 class="page-title animate-fade-in-up" data-i18n="community_main_title">Community & Culture</h1>
 
         <section class="community-intro reveal-on-scroll">
-            <p>Shore.™ is more than a drink – it's a community of people who recognize the power in connection. Find us on social media to share your Shore.™ moments and see how others are enjoying their cans around the country.</p>
-            <p>Follow us on Instagram @shore_can and use #ShoreLife to be featured. Check out some of the latest vibes from our community below:</p>
+            <h2 data-i18n="community_join_title">Join the Shore.™ Community</h2>
+            <p data-i18n="community_join_paragraph_1">Shore.™ is more than a drink – it's a community of people who recognize the power in connection. Find us on social media to share your Shore.™ moments and see how others are enjoying their cans around the country.</p>
+            <p data-i18n="community_join_paragraph_2">Follow us on Instagram <strong data-i18n="community_instagram_handle">@shore_can</strong> and use <strong data-i18n="community_hashtag">#ShoreLife</strong> to be featured. Check out some of the latest vibes from our community below:</p>
         </section>
 
         <section class="social-feed-section reveal-on-scroll delay-1">
-            <h2 class="section-heading">#ShoreLife on Instagram</h2>
+            <h2 class="section-heading" data-i18n="community_social_feed_title">#ShoreLife on Instagram</h2>
             <div class="social-posts-grid">
                 <div class="social-post-card">
                     <div class="card-media">
                         <img src="PoolShore.png" alt="Instagram Post 1">
                     </div>
-                    <p class="post-caption">Shore.™ by the pool #CoastalVibes</p>
+                    <p class="post-caption" data-i18n="social_post_1_caption">Shore.™ by the pool #CoastalVibes</p>
                 </div>
                 <div class="social-post-card">
                     <div class="card-media">
                         <video src="CrabWalk.mp4" autoplay loop muted playsinline alt="Instagram Post 2"></video>
                     </div>
-                    <p class="post-caption">Don't be crabby! Say Shore.™ #ShoreLife</p>
+                    <p class="post-caption" data-i18n="social_post_2_caption">Don't be crabby! Say Shore.™ #ShoreLife</p>
                 </div>
                 <div class="social-post-card">
                     <div class="card-media">
                         <img src="KitchenShore.png" alt="Instagram Post 3">
                     </div>
-                    <p class="post-caption">Shore.™ on the counter #CoastalVibes</p>
+                    <p class="post-caption" data-i18n="social_post_3_caption">Shore.™ on the counter #CoastalVibes</p>
                 </div>
                 <div class="social-post-card">
                     <div class="card-media">
                         <img src="PicnicShore.png" alt="Instagram Post 4">
                     </div>
-                    <p class="post-caption">Weekend getaway essentials. #ShoreLife</p>
+                    <p class="post-caption" data-i18n="social_post_4_caption">Weekend getaway essentials. #ShoreLife</p>
                 </div>
                 <div class="social-post-card">
                     <div class="card-media">
                         <img src="Porch_Shore.png" alt="Instagram Post 5">
                     </div>
-                    <p class="post-caption">Shore.™ in the sun #ShoreLife</p>
+                    <p class="post-caption" data-i18n="social_post_5_caption">Shore.™ in the sun #ShoreLife</p>
                 </div>
                 <div class="social-post-card">
                     <div class="card-media">
                         <img src="LifeguardShore.png" alt="Instagram Post 6">
                     </div>
-                    <p class="post-caption">Lifeguard on deck! #ShoreLife</p>
+                    <p class="post-caption" data-i18n="social_post_6_caption">Lifeguard on deck! #ShoreLife</p>
                 </div>
             </div>
-            <a href="https://www.instagram.com/shore_can/" class="button secondary-button">View More on Instagram</a>
+            <a href="https://www.instagram.com/shore_can/" class="button secondary-button" data-i18n="community_view_more_button">View More on Instagram</a>
         </section>
 
         <section class="community-stories-section reveal-on-scroll delay-2">
-            <h2 class="section-heading">What Our Community Says</h2>
+            <h2 class="section-heading" data-i18n="community_stories_title">What Our Community Says</h2>
             <div class="testimonial-carousel">
                 <div class="testimonial-card">
-                    <blockquote>
+                    <blockquote data-i18n="testimonial_alex_quote">
                         “Shore.™ was a hit at our beach cleanup event – it was the perfect refreshment after a day of giving back to the coast!”
                     </blockquote>
-                    <cite>– Alex, Chicago</cite>
+                    <cite data-i18n="testimonial_alex_cite">– Alex, Chicago</cite>
                 </div>
                 <div class="testimonial-card">
-                    <blockquote>
+                    <blockquote data-i18n="testimonial_olivia_quote">
                         “I love how refreshing Shore.™ is without being too sweet. It's truly a taste of summer, whether I'm by the water or just chilling at home.”
                     </blockquote>
-                    <cite>– Olivia, Los Angeles</cite>
+                    <cite data-i18n="testimonial_olivia_cite">– Olivia, Los Angeles</cite>
                 </div>
                 <div class="testimonial-card">
-                    <blockquote>
+                    <blockquote data-i18n="testimonial_mark_quote">
                         “Shore.™ is perfect for picnics and outdoor gatherings. The light, crisp taste is exactly what you want when enjoying the sunshine with friends.”
                     </blockquote>
-                    <cite>– Mark, Seattle</cite>
+                    <cite data-i18n="testimonial_mark_cite">– Mark, Seattle</cite>
                 </div>
                 <div class="testimonial-card">
-                    <blockquote>
+                    <blockquote data-i18n="testimonial_sophia_quote">
                         “The clean ingredients in Shore.™ are a game-changer. It's my guilt-free pleasure after a long day, bringing those coastal vibes straight to me.”
                     </blockquote>
-                    <cite>– Sophia, Miami</cite>
+                    <cite data-i18n="testimonial_sophia_cite">– Sophia, Miami</cite>
                 </div>
                 <div class="testimonial-card">
-                    <blockquote>
+                    <blockquote data-i18n="testimonial_jamie_quote">
                         “I brought Shore.™ to a lakefront picnic with friends, and it was an instant favorite. It's light, tasty, and feels like summer in a can.”
                     </blockquote>
-                    <cite>– Jamie, Seattle</cite>
+                    <cite data-i18n="testimonial_jamie_cite">– Jamie, Seattle</cite>
                 </div>
                 <div class="testimonial-card">
-                    <blockquote>
+                    <blockquote data-i18n="testimonial_sarah_quote">
                         “Finally a light drink that doesn't compromise on flavor. Shore.™ is my new go-to for any gathering.”
                     </blockquote>
-                    <cite>– Sarah, Miami</cite>
+                    <cite data-i18n="testimonial_sarah_cite">– Sarah, Miami</cite>
                 </div>
             </div>
             <div class="carousel-nav">
@@ -129,20 +149,20 @@
         </section>
 
         <section class="looking-ahead-section reveal-on-scroll delay-3">
-            <h2 class="section-heading">Looking Ahead</h2>
-            <p>We have big plans to make a splash in our community. From sponsoring beach yoga sessions to hosting shoreline clean-ups and pop-up Shore.™ tasting events, we're just getting started. Stay tuned for upcoming events and ways to connect – and if you have ideas, we'd love to hear from you!</p>
-            <p>Meanwhile, don't forget to <a href="index.html" class="inline-link">join our waitlist</a> for the latest news and exclusive invites.</p>
+            <h2 class="section-heading" data-i18n="community_looking_ahead_title">Looking Ahead</h2>
+            <p data-i18n="community_looking_ahead_paragraph_1">We have big plans to make a splash in our community. From sponsoring beach yoga sessions to hosting shoreline clean-ups and pop-up Shore.™ tasting events, we're just getting started. Stay tuned for upcoming events and ways to connect – and if you have ideas, we'd love to hear from you!</p>
+            <p data-i18n="community_looking_ahead_paragraph_2">Meanwhile, don't forget to <a href="index.html" class="inline-link" data-i18n="community_looking_ahead_link">join our waitlist</a> for the latest news and exclusive invites.</p>
         </section>
     </main>
 
 <footer class="site-footer">
     <div class="footer-content-new">
             <div class="footer-col contact-info">
-                <p>Contact: <a href="mailto:shore.cans@gmail.com">shore.cans@gmail.com</a></p>
-                <p><a href="#">Press Kit</a> (coming soon)</p>
+                <p data-i18n="footer_contact">Contact: <a href="mailto:shore.cans@gmail.com">shore.cans@gmail.com</a></p>
+                <p><a href="#" data-i18n="footer_press_kit">Press Kit</a> (coming soon)</p>
             </div>
         <div class="footer-col social-links">
-            <p>Connect with Us:</p>
+            <p data-i18n="footer_connect">Connect with Us:</p>
             <div class="social-icons">
                 <a href="https://www.instagram.com/shore_can/" aria-label="Instagram"><img src="Instagram_Logo.png" alt="Instagram"></a>
                 <a href="https://www.tiktok.com/@shore_can?_t=ZT-8xIIsoB42kH&_r=1" aria-label="TikTok"><img src="TikTok_Logo.png" alt="TikTok"></a>
@@ -150,18 +170,52 @@
             </div>
         </div>
         <div class="footer-col footer-nav">
-            <p>Quick Links:</p>
+            <p data-i18n="footer_quick_links">Quick Links:</p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="city.html">City Series</a></li>
-                <li><a href="community.html">Community</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="city.html" data-i18n="nav_city_series">City Series</a></li>
+                <li><a href="community.html" data-i18n="nav_community">Community</a></li>
             </ul>
         </div>
     </div>
-    <p class="copyright">© 2025 Shore.™ All rights reserved.</p>
+    <p class="copyright" data-i18n="footer_copyright">© 2025 Shore.™ All rights reserved.</p>
 </footer>
 
     <script src="script.js"></script>
-</body>
+
+    <div id="ageGate" class="age-gate-overlay">
+        <div class="age-gate-content">
+            <img src="Logo3.png" alt="Shore.™ Logo" class="age-gate-logo">
+            <h2 data-i18n="agegate_title">Are you 21 or older?</h2>
+            <p data-i18n="agegate_prompt">Please enter your date of birth to continue:</p>
+            <form id="ageGateForm" class="age-gate-form">
+                <div class="dob-inputs">
+                    <select id="dobMonth" required>
+                        <option value="" data-i18n="agegate_month_placeholder">Month</option>
+                        <option value="1" data-i18n="month_jan">January</option>
+                        <option value="2" data-i18n="month_feb">February</option>
+                        <option value="3" data-i18n="month_mar">March</option>
+                        <option value="4" data-i18n="month_apr">April</option>
+                        <option value="5" data-i18n="month_may">May</option>
+                        <option value="6" data-i18n="month_jun">June</option>
+                        <option value="7" data-i18n="month_jul">July</option>
+                        <option value="8" data-i18n="month_aug">August</option>
+                        <option value="9" data-i18n="month_sep">September</option>
+                        <option value="10" data-i18n="month_oct">October</option>
+                        <option value="11" data-i18n="month_nov">November</option>
+                        <option value="12" data-i18n="month_dec">December</option>
+                    </select>
+                    <input type="number" id="dobDay" placeholder="Day" data-i18n-placeholder="agegate_day_placeholder" min="1" max="31" required>
+                    <input type="number" id="dobYear" placeholder="Year" data-i18n-placeholder="agegate_year_placeholder" min="1900" max="2024" required>
+                </div>
+                <p id="ageGateMessage" class="age-gate-message"></p>
+                <button type="submit" class="button primary-button age-gate-submit-btn" data-i18n="agegate_enter_button">Enter</button>
+            </form>
+            <p class="underage-link">
+                <a href="https://www.google.com" target="_blank" data-i18n="agegate_underage_link">I am not 21 or older</a>
+            </p>
+        </div>
+    </div>
+    </body>
 </html>
