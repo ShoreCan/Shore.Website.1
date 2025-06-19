@@ -506,7 +506,7 @@ a:hover {
 .social-post-card .card-media {
     position: relative;
     /* This padding-bottom trick creates a perfect 1:1 square aspect ratio */
-    padding-bottom: 100%; 
+    padding-bottom: 100%;
     height: 0;
     overflow: hidden;
 }
@@ -849,7 +849,7 @@ a:hover {
 
 /* Mobile specific overrides */
 @media (max-width: 767px) {
-    /* Nav: stack vertically and center */
+    /* Nav: stack vertically and left align */
     .main-nav {
         flex-direction: row; /* Keep logo and hamburger on one line */
         align-items: center;
@@ -958,4 +958,133 @@ a:hover {
     .social-icons {
         justify-content: center; /* Center icons on mobile */
     }
+}
+
+
+/* --- Age Gate Styles --- */
+.age-gate-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 41, 106, 0.95); /* Semi-transparent navy overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of everything */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    padding: 1em; /* Ensure padding on small screens */
+}
+
+.age-gate-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.age-gate-content {
+    background-color: var(--color-white);
+    color: var(--color-navy);
+    padding: 2.5em;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    transform: translateY(20px); /* Initial state for animation */
+    transition: transform 0.4s ease;
+}
+
+.age-gate-overlay.show .age-gate-content {
+    transform: translateY(0); /* Animate into view */
+}
+
+.age-gate-logo {
+    max-width: 120px;
+    margin-bottom: 1.5em;
+    height: auto;
+}
+
+.age-gate-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    color: var(--color-navy);
+}
+
+.age-gate-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+}
+
+.age-gate-form {
+    margin-top: 1.5em;
+}
+
+.dob-inputs {
+    display: flex;
+    gap: 0.8em;
+    margin-bottom: 1.5em;
+    justify-content: center;
+}
+
+.dob-inputs select,
+.dob-inputs input[type="number"] {
+    padding: 0.7em 1em;
+    border: 1px solid var(--color-lake);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-navy);
+    background-color: var(--color-sand);
+    flex: 1;
+    max-width: 120px; /* Adjust width for inputs */
+    -moz-appearance: textfield; /* Hide number input arrows for Firefox */
+}
+
+.dob-inputs input[type="number"]::-webkit-outer-spin-button,
+.dob-inputs input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Hide number input arrows for Chrome/Safari */
+    margin: 0;
+}
+
+.dob-inputs select:focus,
+.dob-inputs input[type="number"]:focus {
+    outline: none;
+    border-color: var(--color-navy);
+    box-shadow: 0 0 0 2px rgba(44, 41, 106, 0.2);
+}
+
+.age-gate-message {
+    color: red;
+    font-weight: 500;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+    min-height: 1.5em; /* Reserve space for message */
+}
+
+.age-gate-submit-btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 1.5em auto;
+    padding: 0.8em 1.5em;
+    font-size: 1.1rem;
+}
+
+.underage-link {
+    font-size: 0.95rem;
+}
+
+.underage-link a {
+    color: var(--color-navy);
+    text-decoration: underline;
+}
+
+.underage-link a:hover {
+    color: var(--color-lake);
+}
+
+/* Body class to prevent scrolling when age gate is active */
+body.no-scroll {
+    overflow: hidden;
 }
