@@ -116,4 +116,45 @@ document.addEventListener('DOMContentLoaded', () => {
         updateDots();
         startAutoSlide();
     }
+
+    // NEW: Waitlist Form Submission Logic
+    const waitlistForm = document.getElementById('waitlistForm');
+    const formMessage = document.getElementById('formMessage');
+
+    if (waitlistForm && formMessage) {
+        waitlistForm.addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(waitlistForm);
+
+            try {
+                const response = await fetch(waitlistForm.action, {
+                    method: waitlistForm.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json' // Important for Formspree to return JSON
+                    }
+                });
+
+                if (response.ok) {
+                    formMessage.textContent = "Thank you for joining the waitlist! We'll keep you updated.";
+                    formMessage.style.color = "var(--color-leaf)"; // Green for success (ensure this color is in your CSS variables)
+                    waitlistForm.reset(); // Clear the input field
+                } else {
+                    // Try to parse error message from Formspree response
+                    const data = await response.json();
+                    if (data.errors) {
+                        formMessage.textContent = "Error: " + data.errors.map(error => error.message).join(", ");
+                    } else {
+                        formMessage.textContent = "Oops! There was an error submitting your email. Please try again.";
+                    }
+                    formMessage.style.color = "red";
+                }
+            } catch (error) {
+                formMessage.textContent = "Network error. Please check your connection and try again.";
+                formMessage.style.color = "red";
+                console.error('Submission error:', error);
+            }
+        });
+    }
 });
